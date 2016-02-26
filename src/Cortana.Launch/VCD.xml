@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+  <CommandSet xml:lang="fr-fr" Name="CortanaLaunchCommandSet_fr-fr">
+    <CommandPrefix> Soat, </CommandPrefix>
+    <Example> affiche les séries </Example>
+
+    <Command Name="launchSeries">
+      <Example> affiche les séries  </Example>
+      <ListenFor> affiche les séries </ListenFor>
+      <Feedback> Affichage des séries </Feedback>
+      <Navigate Target="SeriePage.xaml"/>
+    </Command>
+
+    <Command Name="launchSerie">
+      <Example> affiche la série homeland </Example>
+      <ListenFor> affiche la série {serie} </ListenFor>
+      <Feedback> Affichage de la série Homeland </Feedback>
+      <Navigate />
+    </Command>
+
+    <PhraseList Label="serie">
+      <Item> Homeland </Item>
+      <Item> Jessica Jones </Item>
+    </PhraseList>
+
+
+  </CommandSet>
+</VoiceCommands>
